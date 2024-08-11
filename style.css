@@ -1,75 +1,143 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap");
 
 body {
-    font-family: 'Cabin';
-    background-color: #758190;
+  font-family: "Poppins";
+  background-color: #424952;
+  color: #ffffff;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+p {
+  font-size: x-large;
+  font-weight: 500;
+}
+
+h1 {
+  color: black;
+  font-size: large;
+}
+h2 {
+  font-size: x-large;
 }
 
 #tentacles {
-    width: 50px;
+  width: 70px;
+}
+
+.header-container {
+  display: flex;
+  background-color: lightblue;
+
+  align-items: center;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%); /* Center the header */
+  margin-right: calc(-50vw + 50%); /* Center the header */
 }
 
 .header {
-    display: flex;
-    background-color: lightblue;
-    padding: 1%;
-    align-items: center;
-    margin-left: -10px;
-    margin-right: -10px;
-    margin-top: -10px;
+  display: flex;
+  background-color: lightblue;
+  /* padding: 1%; */
+  padding-left: 3%;
+  padding-right: 3%;
+  align-items: center;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%); /* Center the header */
+  margin-right: calc(-50vw + 50%); /* Center the header */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 .stats-container {
-    display: flex;
+  display: flex;
+  cursor: pointer;
+  /* box-shadow: 0 0 30px lightblue; */
+  color: black;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.stats-container:hover {
+  box-shadow: 0 0 30px lightblue;
 }
 
 .stats-card {
-    background-color: #a8b0bc;
-    border-radius: 7px;
-    padding: 1%;
-    margin: 1%;
-    width: 100%;
-    text-align: center;
+  background-color: #a8b0bc;
+  border-radius: 7px;
+  padding: 1%;
+  margin: 1%;
+  width: 100%;
+  text-align: center;
 }
 
-#num-contributions, #total-raised, #num-games {
-    font-size: 50px;
+#num-contributions,
+#total-raised,
+#num-games {
+  font-size: 50px;
 }
 
 #games-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .game-img {
-    width: 100%;
-    border-radius: 5px;
-    box-shadow: 0 0 10px #FFFFFF;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #ffffff;
 }
 
 .game-card {
-    background-color: #FFFFFF;
-    padding: 1%;
-    margin: 1%;
-    width: 300px;
-    text-align: center;
-    border-radius: 7px;
+  background-color: #ffffff;
+  padding: 1%;
+  margin: 1%;
+  width: 300px;
+  text-align: center;
+  border-radius: 7px;
+  color: black;
 }
 
 .game-card:hover {
-    cursor: pointer;
-    box-shadow: 0 0 30px lightblue;
+  cursor: pointer;
+  box-shadow: 0 0 30px lightblue;
 }
 
 #button-container {
-    text-align: center;
+  text-align: center;
 }
 
 button {
-    font-family: 'Cabin';
-    border: none;
-    padding: 1%;
-    margin: 1%;
-    border-radius: 7px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: large;
+  border: 3px solid;
+  padding: 1.5%;
+  margin: 5%;
+  border-radius: 17px;
+}
+
+#our-game-header-button {
+  display: flex;
+  padding: 1%; /* Example of overriding padding */
+  /* margin: 2%; Example of overriding margin */
+  margin-left: auto;
+  border-radius: 10px; /* Example of overriding border-radius */
+}
+
+.header-text {
+  font-size: xx-large;
+}
+
+h3 {
+  font-size: x-large;
+}
+
+h4 {
+  font-size: 120%;
+}
+
+.section {
+  display: flex;
+  font-size: 200%;
+  justify-content: center;
 }
