@@ -237,7 +237,8 @@ document
     }
   });
 
-const btnHeaderOurSearch = document.getElementById("our-game-header-button");
+document.addEventListener("DOMContentLoaded", function(){
+  const btnHeaderOurSearch = document.getElementById("our-game-header-button");
 
 btnHeaderOurSearch.addEventListener("click", function (e) {
   console.log("Clicked");
@@ -246,3 +247,5 @@ btnHeaderOurSearch.addEventListener("click", function (e) {
     behavior: "smooth",
   });
 });
+})
+
